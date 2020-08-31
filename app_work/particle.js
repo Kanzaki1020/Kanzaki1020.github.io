@@ -1,4 +1,3 @@
-/*********************************↓ Particle Effect ↓*********************************/
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 const partiColor = '#00336d';
