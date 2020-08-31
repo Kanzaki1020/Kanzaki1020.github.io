@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>App Wokrs</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand" href="../index.html">KANZAKI WORKSHOP</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="msg-sec">
+        <p class="h1 text-light text-center">Message Borad</p>
+        <div class="container-fluid row">
+            <div class="col msg-container bg-light">
+                <div class="msg">
+                    <div class="row">
+                        <div class="col date">Date</div>
+                        <div class="col-md-auto guest text-right">User name</div>
+                    </div>
+                    <div class="col guest-msg">Hello Hello</div>
+                </div>
+            </div>
+            <div class="col msg-input text-light">
+                <label class="h5">Your Name</label><br>
+                <input class="guest-name" type="text"><br><br>
+                <label class="h5">Say Something</label><br>
+                <textarea class="textarea"></textarea>
+                <p class="submit btn btn-dark float-right">Submit</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./msg.js"></script>
+</html>

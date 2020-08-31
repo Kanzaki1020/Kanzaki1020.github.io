@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    font-family:"JF-OPENHUNINN-1.1";
+    margin: 0pt;
+    text-align: justify;    /* 左右對齊(英文)*/
+    --ms-text-justify: inter-ideograph;
+    --moz-text-align-last:justify;
+    --webkit-text-align-last:justify;
+    color: var(--dark);
+}
+
+body{
+    background-color: rgb(200,200,200) !important;
+}
+a{
+    color: var(--white) !important;
+}
+.nav-item{
+    margin: auto 10px;
+}
+.main-sec{
+    position: relative;
+    top: 5rem;
+}
+.row{
+    width: 65%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.about-me{
+    width: 50%;
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+.pictures{
+    width: 50%;
+}
+.pictures img{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.links-p{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem;
+}
+.links{
+    width: 25rem;
+    border: 0.3rem solid var(--dark);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+.contact{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.contact a{
+    display: block;
+    margin: 0 1rem;
+}
+.contact svg{
+    width: 4rem;
+    border-radius: 0.5rem;
+    fill: var(--dark);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .content {
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+        }
+
+        .box {
+            position: absolute;
+            z-index: 2;
+            top: 60px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background: #c00;
+            border-radius: 5px;
+            transform: rotate(45deg);
+
+            animation: box 0.5s infinite;
+        }
+
+        @keyframes box {
+            0% {
+                top: 50px;
+                transform: rotate(90deg);
+            }
+
+            20% {
+                border-radius: 2px;
+                /*從 20% 的地方才開始變形*/
+            }
+
+            50% {
+                top: 80px;
+                border-bottom-right-radius: 25px;
+                transform: rotate(45deg);
+            }
+
+            80% {
+                border-radius: 2px;
+                /*到 80% 的地方恢復原狀*/
+            }
+
+            100% {
+                top: 50px;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
