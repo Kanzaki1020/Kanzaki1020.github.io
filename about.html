@@ -3,34 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <title>About Me</title>
-    <link type="text/css" rel="stylesheet" href="./style_about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
+    <link type="text/css" rel="stylesheet" href="./style_about.css">    
+    </head>
 
 <body>
-    <header class="bg-dark">
-        <div class="container">
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <ul class="navbar-nav">
-                    <a class="navbar-brand" href="./">KANZAKI WORKSHOP</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="nav-title">
+            <a href="./">KANZAKI WORKSHOP</a>
         </div>
-    </header>
+        <div class="item-box">
+            <div class="item">
+                <a href="./about.html">ABOUT</a>
+            </div>
+            <div class="item">
+                <a href="./work.html">WORKS</a>
+            </div>
+            <div class="item">
+                <a href="./contact.html">CONTACT</a>
+            </div>
+        </div>
+    </nav>
     <section class="container-fluid main-sec">
         <div class="row">
             <div class="about-me">
@@ -43,14 +40,6 @@
                 <p class="links-p">－點圖案連絡我或觀看作品集－</p>
                 <div class="links">
                     <div class="contact">
-                        <a href="https://www.facebook.com/Kanzaki.Mikao">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.73 455.73"
-                                style="enable-background:new 0 0 455.73 455.73;" xml:space="preserve">
-                                <path
-                                    d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z" />
-                            </svg>
-                        </a>
                         <a href="https://www.behance.net/Kanzaki_Workshop">
                             <svg href="" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455"
@@ -67,12 +56,27 @@
                                 </g>
                             </svg>
                         </a>
+                        <a href="https://www.facebook.com/Kanzaki.Mikao">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.73 455.73"
+                                style="enable-background:new 0 0 455.73 455.73;" xml:space="preserve">
+                                <path
+                                    d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z" />
+                            </svg>
+                        </a>
                         <a href="https://github.com/Kanzaki1020">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 568 568"
                                 style="enable-background:new 0 0 568 568;" xml:space="preserve">
                                 <path
                                     d="M551,0h-67.9H84.9H17.1H2.4v14.7v72.4v393.8v72.4V568h14.7h67.9h109.6v-0.1c8-0.1,14.1-4.6,14.4-12.2c0.7-19.7,0.2-39.5,0.2-58.6c-14.3,0.7-27.9,2.5-41.4,1.7c-29.8-1.7-52.6-14.4-64.5-43.6c-7-17.3-17.6-32-34.1-41.9c-3.1-1.8-5.8-4.6-8.1-7.3c-3.1-3.6-2.5-7.3,2.4-8.3c4.9-1,10.3-1.7,15.1-0.8c19,3.6,32.2,15.5,42.2,31.3c19.9,31.4,50.5,41,85,26.5c1.9-0.8,4.4-2.8,4.7-4.6c2.8-13.9,8-26.5,18.4-37.6c-11.6-2.2-22.4-3.7-33-6.2c-30.4-7-57.7-19.7-77.7-44.8c-16.3-20.5-23.8-44.5-27.2-70.1c-5.4-40-0.6-77.5,26.9-109.5c1.4-1.6,2.1-4.9,1.5-6.9c-6.9-22.5-5.8-44.8,1-67.1c3.6-11.7,4.6-12.3,16.5-10.6c0.7,0.1,1.4,0.3,2.2,0.4c23.9,4,44.5,15.5,64.7,28c2.7,1.7,6.9,2.7,9.9,2c48.4-11.7,96.7-11.7,145.1,0c2.8,0.7,6.6-0.3,9.2-1.7c11-5.8,21.6-12.5,32.7-17.9c13-6.3,26.7-11.1,41.4-10.9c2.6,0,6.6,2.5,7.4,4.8c8.9,23.5,10.7,47.4,3.7,71.8c-0.8,2.6,0.4,6.3,1.8,8.9c7,12.8,16.7,24.6,21.1,38.1c13.4,41.3,8.5,82.2-9.7,121.1c-16.8,35.6-47.8,53.6-84.6,62.9c-12.4,3.1-25.2,5-38.6,7.7c17.6,18.3,20.3,40.7,20,64.2c-0.3,24.2-0.2,48.4-0.3,72.6c0,11.7,5.1,18.2,14,18.6c0,0,55.4,0,106.2,0v0h82.5v0v-87.1V87.1V14.7V0H551z" />
+                            </svg>
+                        </a>
+                        <a href="./CV.pdf">
+                            <svg id="b4c0d695-2fb0-482c-aa4e-208c53c7bd81" data-name="Capa 1"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M0,0V512H58.18V428.49A19.37,19.37,0,0,1,68.5,411.36l97-51.3,4.75-14.86c1.43-5,3.68-10,8.32-11.27,1.47-.41,3.33-3.1,3.58-5l2.74-28.9a9,9,0,0,0-2.14-6.25c-7.89-9.46-12.2-20.41-14-32.93-.92-6.29-4.2-12.1-5.88-18.3L156.26,208c-.69-4.54-.56-8,4.51-9.79,1.41-.49,2.62-3.41,2.62-6.28l-.07-65.21c1.08-15.78,9.14-27.32,21.29-36.48C198.19,80,252.44,60.79,272.54,52.82c3.33-1.32,5.16.85,4.91,2.26-5.09,29.15,27.31,19,49.95,35.17,11.85,8.5,20.21,20.7,21.28,36.48l-.06,65.21c0,3.47,1.21,5.79,2.61,6.28,5.07,1.76,5.21,5.25,4.52,9.79l-6.6,34.56c-1.69,6.2-5,12-5.88,18.3-1.82,12.52-6.12,23.47-14,32.93a9,9,0,0,0-2.15,6.25l2.75,28.9c.24,1.88,2.1,4.57,3.58,5,4.63,1.31,6.89,6.29,8.31,11.27l4.76,14.86,97,51.3a19.37,19.37,0,0,1,10.32,17.13V512H512V0Z" />
                             </svg>
                         </a>
                     </div>
@@ -83,8 +87,11 @@
             </div>
         </div>
     </section>
+    <canvas id="canvas"></canvas>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script class="particle" src="app_work/particle.js"></script>
+
 </html>

@@ -1,70 +1,220 @@
-*{
+* {
     box-sizing: border-box;
-    font-family:"JF-OPENHUNINN-1.1";
+    font-family: "JF-OPENHUNINN-1.1";
     margin: 0pt;
-    text-align: justify;    /* 左右對齊(英文)*/
+    text-align: justify;
+    /* 左右對齊(英文)*/
     --ms-text-justify: inter-ideograph;
-    --moz-text-align-last:justify;
-    --webkit-text-align-last:justify;
+    --moz-text-align-last: justify;
+    --webkit-text-align-last: justify;
     color: var(--dark);
 }
 
-body{
-    background-color: rgb(200,200,200) !important;
+body {
+    background-color: rgb(200, 200, 200);
 }
-a{
-    color: var(--white) !important;
+
+a {
+    text-decoration: none!important;
+    color: rgb(246, 246, 246)!important;
 }
-.nav-item{
-    margin: auto 10px;
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 1vw 5vw;
+    background-color: rgba(23, 23, 23, 1);
+    justify-content: left;
+    line-height: initial;
 }
-.main-sec{
+
+.nav-title {
+    width: 100%;
+    font-size: 3rem;
+}
+
+.item-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item {
+    display: inline-block;
+    margin: auto 2rem;
+    font-size: 1.5rem;
+}
+
+.main-sec {
     position: relative;
-    top: 5rem;
+    top: 3rem;
 }
-.row{
-    width: 65%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+
+.row {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3rem;
+    border-radius: 20px;
 }
-.about-me{
+
+.about-me {
     width: 50%;
     font-size: 1.3rem;
     padding: 2rem;
 }
-.pictures{
+
+.pictures {
     width: 50%;
 }
-.pictures img{
+
+.pictures img {
     width: 80%;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
-.links-p{
+
+.links-p {
     font-weight: bold;
     text-align: center;
     margin-top: 5rem;
 }
-.links{
+
+.links {
     width: 25rem;
     border: 0.3rem solid var(--dark);
     border-radius: 1rem;
     padding: 1.5rem;
     margin: 0 auto;
 }
-.contact{
+
+.contact {
     text-align: center;
     display: flex;
     justify-content: center;
 }
-.contact a{
+
+.contact a {
     display: block;
     margin: 0 1rem;
 }
-.contact svg{
+
+.contact svg {
     width: 4rem;
     border-radius: 0.5rem;
     fill: var(--dark);
+}
+
+#canvas {
+    display: initial;
+    width: 100%;
+    height: 990px;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    background: radial-gradient(#6dd5ed, #2193b0);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+@media(max-width:1400px) {
+    nav {
+        padding: 2vw 3vw;
+    }
+    .nav-title {
+        width: 100%;
+        font-size: 1.7rem;
+        background-color: rgba(23, 23, 23, 1);
+    }
+    .item {
+        width: auto;
+        font-size: 0.8rem;
+        margin: auto 10px;
+    }
+    #canvas{
+        display: none;
+    }
+    .about-me{
+        padding: 0;
+        font-size: 1rem;
+    }
+    .links-p{
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    nav {
+        display: inline-block!important;
+        padding: 0;
+        margin: 0vw;
+        justify-content: center;
+    }
+    .nav-title {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .item-box {
+        border-top: 5px rgba(220, 220, 220, 1) solid;
+        justify-content: space-evenly;
+    }
+    .item {
+        margin: 5px;
+    }
+    .main-sec {
+        width: auto;
+        top: 2rem;
+        padding: 0 2rem;
+    }
+    .row {
+        width: auto;
+        height: 520px;
+        position: relative;
+        left: 0%;
+        transform: translate(0%, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem 0.5rem;
+        border-radius: 20px;
+    }
+    .about-me {
+        width: 100%;
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+    br{
+        display: none;
+    }
+    .links-p{
+        margin-top: 0rem;
+    }
+    .links{
+        width: auto;
+        padding: 0.6rem;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+    .contact svg{
+        width: 2rem;
+    }
+    .pictures{
+        position: absolute;
+        right: 15px;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .pictures img{
+        position: absolute;
+        top: -15px;
+        width: 100%;
+    }
+    #canvas{
+        display: none;
+    }
 }

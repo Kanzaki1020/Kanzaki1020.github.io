@@ -1,4 +1,4 @@
-const canvas = document.getElementById('canvas1');
+const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const partiColor = '#00336d';
 canvas.width = window.innerWidth;
@@ -48,8 +48,10 @@ class Particle {
         //check collision detection - mouse position / particle position
         let dx = mouse.x - this.x;
         let dy = mouse.y - this.y;
+
         //distance of partical and mouse
         let distance = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
+
         //move distance of particles, when particles touch mouse radius
         let offsetRange = 10;
 
@@ -86,8 +88,8 @@ function init() {
         let size = (Math.random() * 5) + 1;
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
-        let dirX = (Math.random() * 10) - 2.5;
-        let dirY = (Math.random() * 10) - 2.5;
+        let dirX = (Math.random() * 10) - 5;
+        let dirY = (Math.random() * 10) - 5;
         let color = partiColor;
 
         particlesArray.push(new Particle(x, y, dirX, dirY, size, color));
@@ -100,8 +102,8 @@ function connect() {
     for (let a = 0; a < particlesArray.length; a++) {
         for (let b = a; b < particlesArray.length; b++) {
             let distance = Math.pow((particlesArray[a].x - particlesArray[b].x), 2) + Math.pow((particlesArray[a].y - particlesArray[b].y), 2);
-            if (distance < (canvas.width / 7) * (canvas.height / 7)) {
-                opacity = 1 - (distance / 20000);
+            if (distance < (canvas.width / 8) * (canvas.height / 8)) {
+                opacity = 1 - (distance / 10000);
                 ctx.strokeStyle = 'rgba(0,51,109,' + opacity + ')';
                 ctx.linewidth = 1;
                 ctx.beginPath();

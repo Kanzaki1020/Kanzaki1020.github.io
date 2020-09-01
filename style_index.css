@@ -11,7 +11,8 @@ body{
 }
 a{
     text-decoration: none;
-    color:rgb(50,50,50);
+    color: rgb(246,246,246);
+    
 }
 section{
     display: flex;
@@ -21,58 +22,33 @@ section{
     margin: 4vw 0;
 }
 
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 1vw 5vw;
+    background-color: rgba(23,23,23,1);
+    justify-content: left;
+}
+
+.nav-title{
+    width: 100%;
+    font-size: 3rem;
+}
+.item-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.item{
+    display: inline-block;
+    margin: auto 2rem;
+    font-size: 1.5rem;
+}
+
 .section1{
     width: 100%;
     height: 35vw;
     margin-top: 2vw;
-}
-
-nav{
-    margin: 1.5vw 100px 0vw;
-}
-
-.nav-title{
-    position: relative;
-    top: -0.5vw;
-    left: 3vw;
-    font-size: 3vw;
-}
-
-.nav-btn{
-    background-color: rgba(23,23,23,1);
-    width: 40vw;
-    height: 3.5vw;
-    position: absolute;
-    top: 1.24vw;
-    right: 0vw;
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 80vw;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding-left: 4vw;
-}
-
-.nav-btn a{
-    text-align: center;
-    font-size: 1.3vw;
-    color: white;
-
-    transition: 0.5s;
-    transition-timing-function: ease;
-}
-
-.a-hover{
-    height: 100%;
-    padding: 1.2rem 3rem;
-
-    transition: 1s;
-    transition-timing-function: ease;
-}
-
-.a-hover:hover{
-    background-color: rgba(255,255,255,0.9);
-    color: rgba(23,23,23,1);
 }
 
 .intro{
@@ -94,7 +70,7 @@ nav{
 .intro-content{
     margin: 0.5vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 
 .hashtag{
@@ -262,11 +238,20 @@ footer h6{
 
 /*----橫向平板----*/
 @media(max-width: 1400px){
-    .a-hover{
-        padding: 1vw 2.5vw;
-        transition: none;
-        transition-timing-function: initial;
+    nav{
+        padding: 1vw 5vw;
     }
+    .nav-title{
+        width: 100%;
+        font-size: 1.7rem;
+        background-color: rgba(23,23,23,1);
+    }
+    .item{
+        width: auto;
+        font-size: 0.8rem;
+        margin: auto 20px;
+    }
+
     .prev{
         margin-top: 4vw;
         height: auto;
@@ -322,49 +307,28 @@ footer h6{
         margin: 8vw 0vw;
     }
     
-    
     nav{
-        display:  block;
+        display: inline-block;
+        padding: 0;
         margin: 0vw;
-        height: auto;
+        justify-content: center;
     }
     .nav-title{
-        position: relative;
-        background-color: rgba(23,23,23,1);
-        left: 0vw;
-        padding: 1em 0em 0.1em;
         text-align: center;
+        padding: 10px 0;
     }
-    .nav-title a{
-        text-align: center;
-        font-size: 1.2em;
-        color: rgba(255,255,255,1);
+    .item-box{
+        border-top: 5px rgba(220,220,220,1) solid;
+        justify-content: space-evenly;
     }
-    .nav-btn{
-        display: flex;
-        justify-content: space-around;
-        position: relative;
-        top: 0vw;
-        width: 100%;
-        height: auto;
-        background-color: rgba(220,220,220,1);
-        border-radius: initial;
-        padding: 0;
+    .item{
+        margin: 5px ;
     }
-    .nav-btn a{
-        text-align: center;
-        font-size: 0.5em;
-        color: rgba(23,23,23,1);
-    }
-    .a-hover{
-        padding: 0;
-    }
-    
     
     .section1{
         width: 100%;
         height: auto;
-        margin-top: 0vw;
+        margin-top: 5vw;
     }
     .intro{
         display: flex;
