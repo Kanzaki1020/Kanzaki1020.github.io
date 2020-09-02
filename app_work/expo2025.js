@@ -57,20 +57,13 @@ class Eyes {
         ctx.arc(pupil_x-pupil_radius/3, pupil_y-pupil_radius/3, pupil_radius/2, 0, Math.PI * 2, true);
         ctx.fillStyle = 'gray';
         ctx.fill();
-
-        //draw mouse
-        ctx.beginPath();
-        ctx.arc(mouse.x, mouse.y, 25, 0, 2 * Math.PI, true);
-        ctx.closePath();
-        ctx.fillStyle = 'gold';
-        ctx.fill();
     }
 }
 
 function init() {
     eyes = [];
     let overlapping = false;
-    let protection = 10000; //max amount of eyes
+    let protection = 1000; //max amount of eyes
     let counter = 0;
     let numEyes = 200;
 

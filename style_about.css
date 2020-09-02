@@ -120,7 +120,7 @@ nav {
 
 @media(max-width:1400px) {
     nav {
-        padding: 2vw 3vw;
+        padding: 1vw 5vw;
     }
     .nav-title {
         width: 100%;
