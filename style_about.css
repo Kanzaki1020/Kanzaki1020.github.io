@@ -119,30 +119,30 @@ nav {
 }
 
 @media(max-width:1400pt) {
-    nav{
+    nav {
         padding: 1vw 5vw;
     }
-    .nav-title{
+    .nav-title {
         width: 100%;
         font-size: 2rem;
-        background-color: rgba(23,23,23,1);
+        background-color: rgba(23, 23, 23, 1);
     }
-    .item{
+    .item {
         width: auto;
         font-size: 1.5rem;
         margin: auto 20px;
     }
-    #canvas{
+    #canvas {
         display: none;
     }
-    .about-me{
+    .about-me {
         padding: 0;
         font-size: 1rem;
     }
-    .links{
+    .links {
         padding: 0.8rem;
     }
-    .links-p{
+    .links-p {
         margin-top: 0;
     }
     .contact svg {
@@ -153,77 +153,85 @@ nav {
 }
 
 @media(max-width: 600pt) {
-    nav{
+    nav {
         display: inline-block;
         padding: 0;
-        margin: 0vw;
+        margin: 0;
         justify-content: center;
     }
-    .nav-title{
+    .nav-title {
         text-align: center;
         padding: 10px 0;
+        font-size: 1.5rem;
     }
-    .item-box{
-        border-top: 5px rgba(220,220,220,1) solid;
+    .item-box {
+        border-top: 5px rgba(220, 220, 220, 1) solid;
         justify-content: space-evenly;
     }
-    .item{
-        margin: 5px ;
+    .item {
+        font-size: 1rem;
+        margin: 5px;
     }
-
     .main-sec {
         width: auto;
         top: 2rem;
-        padding: 0 2rem;
+    }
+    .container-fluid {
+        padding-right: 0!important;
+        padding-left: 0!important;
     }
     .row {
-        width: auto;
-        height: 520px;
+        width: 100%;
+        height: 600px;
         position: relative;
-        left: 0%;
-        transform: translate(0%, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        padding: 1rem 0.5rem;
-        border-radius: 20px;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
     }
     .about-me {
         width: 45%;
         position: absolute;
         top: 1rem;
         left: 0;
-        padding: 1rem;
+        padding: 0.5rem;
         font-size: 1rem;
     }
-    br{
+    br {
         display: none;
     }
-    .links-p{
-        margin-top: 0rem;
+    .links-p {
+        position: absolute;
+        right: -100%;
+        transform: translate(-15%,0);
     }
-    .links{
-        width: auto;
+    .links {
+        width:250px;
+        position: absolute;
+        right: -100%;
+        transform: translate(-10%,50%);
         padding: 0.6rem;
     }
     .contact {
         display: flex;
         justify-content: center;
     }
-    .contact svg{
+    .contact svg {
         width: 2rem;
     }
-    .pictures{
+    .pictures {
         position: absolute;
+        top: 60px;
         right: 15px;
-        height: 70%;
+        height: 250px;
         overflow: hidden;
         border-radius: 20px;
     }
-    .pictures img{
+    .pictures img {
         position: absolute;
-        top: -15px;
         width: 100%;
     }
-    #canvas{
+    #canvas {
         display: none;
     }
 }
