@@ -82,7 +82,7 @@ nav {
 }
 
 .links {
-    width: 25rem;
+    width: 100%;
     border: 0.3rem solid var(--dark);
     border-radius: 1rem;
     padding: 1.5rem;
@@ -118,19 +118,19 @@ nav {
     opacity: 0.7;
 }
 
-@media(max-width:1400px) {
-    nav {
+@media(max-width:1400pt) {
+    nav{
         padding: 1vw 5vw;
     }
-    .nav-title {
+    .nav-title{
         width: 100%;
-        font-size: 1.7rem;
-        background-color: rgba(23, 23, 23, 1);
+        font-size: 2rem;
+        background-color: rgba(23,23,23,1);
     }
-    .item {
+    .item{
         width: auto;
-        font-size: 0.8rem;
-        margin: auto 10px;
+        font-size: 1.5rem;
+        margin: auto 20px;
     }
     #canvas{
         display: none;
@@ -139,29 +139,38 @@ nav {
         padding: 0;
         font-size: 1rem;
     }
+    .links{
+        padding: 0.8rem;
+    }
     .links-p{
         margin-top: 0;
     }
+    .contact svg {
+        width: 3rem;
+        border-radius: 0.5rem;
+        fill: var(--dark);
+    }
 }
 
-@media(max-width: 600px) {
-    nav {
-        display: inline-block!important;
+@media(max-width: 600pt) {
+    nav{
+        display: inline-block;
         padding: 0;
         margin: 0vw;
         justify-content: center;
     }
-    .nav-title {
+    .nav-title{
         text-align: center;
         padding: 10px 0;
     }
-    .item-box {
-        border-top: 5px rgba(220, 220, 220, 1) solid;
+    .item-box{
+        border-top: 5px rgba(220,220,220,1) solid;
         justify-content: space-evenly;
     }
-    .item {
-        margin: 5px;
+    .item{
+        margin: 5px ;
     }
+
     .main-sec {
         width: auto;
         top: 2rem;
@@ -178,12 +187,12 @@ nav {
         border-radius: 20px;
     }
     .about-me {
-        width: 100%;
+        width: 45%;
         position: absolute;
-        top: 10rem;
+        top: 1rem;
         left: 0;
         padding: 1rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     br{
         display: none;
@@ -205,7 +214,7 @@ nav {
     .pictures{
         position: absolute;
         right: 15px;
-        height: 180px;
+        height: 70%;
         overflow: hidden;
         border-radius: 20px;
     }

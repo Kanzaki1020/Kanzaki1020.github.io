@@ -1,54 +1,61 @@
-*{
+* {
     box-sizing: border-box;
-    font-family:"JF-OPENHUNINN-1.1";
+    font-family: "JF-OPENHUNINN-1.1";
     margin: 0pt;
-    text-align: justify;    /* 左右對齊(英文)*/
-    text-justify:inter-ideograph;   /*左右對齊*/
-    --lightgray: rgba(220,220,220,1);
-    --light:rgba(250,250,250,1);
-    --dark:rgba(23,23,23,1);
+    text-align: justify;
+    /* 左右對齊(英文)*/
+    text-justify: inter-ideograph;
+    /*左右對齊*/
+    --lightgray: rgba(220, 220, 220, 1);
+    --light: rgba(250, 250, 250, 1);
+    --dark: rgba(23, 23, 23, 1);
 }
 
-body{
+body {
     background-color: var(--lightgray);
 }
-a{
+
+a {
     text-decoration: none!important;
-    color: rgb(246,246,246)!important;
+    color: rgb(246, 246, 246)!important;
 }
-nav{
+
+nav {
     display: flex!important;
     width: 100%;
     margin: auto;
     padding: 1vw 5vw;
-    background-color: rgba(23,23,23,1);
+    background-color: rgba(23, 23, 23, 1);
     justify-content: left;
     line-height: initial!important;
 }
 
-.nav-title{
+.nav-title {
     width: 100%;
     font-size: 3rem;
 }
-.item-box{
+
+.item-box {
     display: flex;
     justify-content: flex-end;
 }
-.item{
+
+.item {
     display: inline-block;
     margin: auto 2rem;
     font-size: 1.5rem;
 }
 
-.main-content{
+.main-content {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: 3vw;
 }
-.content-bg{
+
+.content-bg {
     fill: var(--light);
-    stroke:var(--dark) ;
+    stroke: var(--dark);
     stroke-width: 1rem;
     position: relative;
     left: 50%;
@@ -56,26 +63,29 @@ nav{
     z-index: -1;
     opacity: 0.8;
 }
-.content-box{
+
+.content-box {
     width: inherit;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: 10vw;
-    
     color: var(--dark);
 }
-.content-title{
+
+.content-title {
     text-align: center;
     font-size: 3vw;
     font-variant-caps: small-caps;
 }
-.e-mail{
+
+.e-mail {
     text-align: center;
     font-size: 1.5vw;
     margin-top: 1.5vw;
 }
-.icon{
+
+.icon {
     text-align: center;
     width: 30vw;
     position: relative;
@@ -83,7 +93,8 @@ nav{
     transform: translate(-50%, 0);
     margin-top: 1.5vw;
 }
-.icon svg{
+
+.icon svg {
     width: 3rem;
     fill: var(--dark);
     margin: 0 1.5vw;
@@ -102,55 +113,58 @@ nav{
 }
 
 /*    rwd    */
-@media(max-width:1400pt){
-    nav{
+
+@media(max-width:1400pt) {
+    nav {
         padding: 0;
     }
-    .nav-title{
+    .nav-title {
         width: 100%;
         font-size: 1.7rem;
-        background-color: rgba(23,23,23,1);
+        background-color: rgba(23, 23, 23, 1);
     }
     .item{
-        width: auto;
-        font-size: 0.8rem;
-        margin: auto 20px;
+        display: inline-block;
+        margin: auto 2rem;
+        font-size: 1.5rem;
     }
-    .main-content{
+    .main-content {
         top: 5vw;
     }
-    .content-bg{
+    .content-bg {
         width: 30rem;
         height: 30rem;
         opacity: 1;
     }
-    .content-bg rect{
+    .content-bg rect {
         width: 30rem;
         height: 30rem;
     }
-    .content-box{
+    .content-box {
         margin-top: 12vw;
     }
-    .content-title{
+    .content-title {
         font-size: 5.5vw;
     }
-    .e-mail{
+    .e-mail {
         font-size: 2.5vw;
     }
-    #canvas{
+    #canvas {
         display: none;
     }
 }
-@media(max-width: 600pt){
-    nav{
+
+@media(max-width: 600pt) {
+    nav {
         display: inline-block!important;
         padding: 0;
         margin: 0vw;
         justify-content: center;
     }
-    .nav-title{
+    .nav-title {
         text-align: center;
         padding: 10px 0;
+        font-size: 2rem;
     }
     .item-box{
         border-top: 5px rgba(220,220,220,1) solid;
@@ -159,29 +173,29 @@ nav{
     .item{
         margin: 5px ;
     }
-
-    .main-content{
+    
+    .main-content {
         top: 10vw;
     }
-    .content-box{
+    .content-box {
         width: 100%;
         top: 13vw;
     }
-    .content-bg{
+    .content-bg {
         width: 100vw;
-        height:100vw;
+        height: 100vw;
     }
-    .content-bg rect{
+    .content-bg rect {
         width: inherit;
         height: inherit;
     }
-    .content-title{
+    .content-title {
         font-size: 10vw;
     }
-    .icon{
+    .icon {
         width: 60%;
     }
-    .e-mail{
+    .e-mail {
         font-size: 5vw;
     }
 }
