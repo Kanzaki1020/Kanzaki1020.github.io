@@ -16,7 +16,7 @@ a{
     color: rgb(246,246,246)!important;
 }
 nav{
-    display: flex!important;
+    display: flex;
     width: 100%;
     margin: auto;
     padding: 1vw 5vw;
@@ -172,12 +172,12 @@ img{
     }
     .nav-title{
         width: 100%;
-        font-size: 1.7rem;
+        font-size: 2rem;
         background-color: rgba(23,23,23,1);
     }
     .item{
         width: auto;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
         margin: auto 20px;
     }
     .grid{
@@ -248,22 +248,24 @@ img{
     }
 }
 @media(max-width: 600pt){
-    nav{
-        display: inline-block!important;
+    nav {
+        display: inline-block;
         padding: 0;
-        margin: 0vw;
+        margin: 0;
         justify-content: center;
     }
-    .nav-title{
+    .nav-title {
         text-align: center;
         padding: 10px 0;
+        font-size: 1.5rem;
     }
-    .item-box{
-        border-top: 5px rgba(220,220,220,1) solid;
+    .item-box {
+        border-top: 5px rgba(220, 220, 220, 1) solid;
         justify-content: space-evenly;
     }
-    .item{
-        margin: 5px ;
+    .item {
+        font-size: 1rem;
+        margin: 5px;
     }
     .grid{
         --grid-size: 165px;
