@@ -237,21 +237,34 @@ footer h6{
 }
 
 /*----橫向平板----*/
-@media(max-width: 1400px){
+@media(max-width: 1400pt){
     nav{
         padding: 1vw 5vw;
     }
     .nav-title{
         width: 100%;
-        font-size: 1.7rem;
+        font-size: 2rem;
         background-color: rgba(23,23,23,1);
     }
     .item{
         width: auto;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
         margin: auto 20px;
     }
+    .intro{
+        justify-content: center;
+    }
+    .intro-content{
+        font-size: 1.5rem;
+    }
+    .intro-content span{
+        font-size: 1.3rem;
+    }
 
+    .txt{
+        font-size: 1rem;
+        padding: 4.5vw 6vw 4vw;
+    }
     .prev{
         margin-top: 4vw;
         height: auto;
@@ -287,6 +300,7 @@ footer h6{
         width: 25vw;
         margin-top: 5vw;
         padding: 1vw;
+        font-size: 1.2rem;
     }
     .btn-more:hover{
         background-color: transparent;
@@ -296,6 +310,9 @@ footer h6{
         opacity: 1;
         padding: 1vw 2vw 3vw;
     }
+    footer p,footer h6{
+        font-size: 1.3rem;
+    }
 }
 
 /*----直向手機----*/
@@ -304,7 +321,7 @@ footer h6{
         display: none;
     }
     section{
-        margin: 8vw 0vw;
+        margin: 10vw 0vw;
     }
     
     nav{
@@ -358,7 +375,7 @@ footer h6{
         margin-top: 1.5vw;
         display: inline-block;
         text-align: right;
-        font-size: 2px;
+        font-size: 1rem;
     }
     
     .square-pic{
@@ -382,18 +399,19 @@ footer h6{
         border-top: 3px solid rgba(100, 250, 255,1);
     }
     .txt{
-        font-size: 0.1em;
+        font-size: 1.5rem;
         padding: 5vw 5.5vw 5vw;
-        line-height: 4vw;
+        line-height: 2.5rem;
     }
     .content-title{
         display: block;
         position: absolute;
-        top:-6vw;
+        top:-3.5rem;
         left: 50%;
         transform: translate(-50%, 0);
         padding: 1vw 2vw 3vw;
         border-top: 3px solid rgba(100, 250, 255,1);
+        font-size: 1.8rem;
     }
 
     .prev{
@@ -401,15 +419,21 @@ footer h6{
     }
     .prev-box{
         width: 55vw;
-        height: 68vw;
+        height: 70vw;
         margin-bottom: 10px;
     }
     .figcaption{
-        height: 13vw;
+        height: 15vw;
         position: absolute;
         bottom: 0;
         padding: 1vw 2vw;
         background-color: rgba(30,30,30,1);
+    }
+    .figcaption .title{
+        font-size: 1.8rem;
+    }
+    .btn-more{
+        font-size: 1.5rem;
     }
     .icon svg{
         width: 5vw;
